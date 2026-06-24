@@ -5,21 +5,21 @@
 class Thanos < Formula
   desc "LOOP AI - Design, Code, Review, Test"
   homepage "https://github.com/tinhtran24/thanos"
-  version "1.0.4"
+  version "1.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tinhtran24/thanos/releases/download/v1.0.4/thanos_1.0.4_darwin_amd64.tar.gz"
-      sha256 "c73e61216e4c8c2065db38a624d797f719dc3e5c648e4b074485d13d38298751"
+      url "https://github.com/tinhtran24/thanos/releases/download/v1.0.6/thanos_1.0.6_darwin_amd64.tar.gz"
+      sha256 "c0be622931cd8f80a7d8e60b21841ee928ea6f447f8572b555929c78d7108e31"
 
       define_method(:install) do
         bin.install "thanos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tinhtran24/thanos/releases/download/v1.0.4/thanos_1.0.4_darwin_arm64.tar.gz"
-      sha256 "50adce374496875c3a24b29dbd6adae91d17b3871c21ba9d55cad9f2ae1bf3e7"
+      url "https://github.com/tinhtran24/thanos/releases/download/v1.0.6/thanos_1.0.6_darwin_arm64.tar.gz"
+      sha256 "3ebece84bebedfb32646c3c0e90d4b24b715e49658b3cf18784b9db805ac7d09"
 
       define_method(:install) do
         bin.install "thanos"
@@ -29,15 +29,15 @@ class Thanos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tinhtran24/thanos/releases/download/v1.0.4/thanos_1.0.4_linux_amd64.tar.gz"
-      sha256 "959cd433519c1f53fe15935aadded572ea816ad1655e3673e4c26b9e99ddadb2"
+      url "https://github.com/tinhtran24/thanos/releases/download/v1.0.6/thanos_1.0.6_linux_amd64.tar.gz"
+      sha256 "91abceef33def67fea6eea58ab440d4e8ff5d275ae8e95cd6b9dd3bd3ae420f4"
       define_method(:install) do
         bin.install "thanos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tinhtran24/thanos/releases/download/v1.0.4/thanos_1.0.4_linux_arm64.tar.gz"
-      sha256 "9fb7b58dade507e8c8f4ab96ddb469067d527655351a45c03117db61b9220a56"
+      url "https://github.com/tinhtran24/thanos/releases/download/v1.0.6/thanos_1.0.6_linux_arm64.tar.gz"
+      sha256 "71f63a9dde7d6109ae2b502b6465d86e3baf2c5471a4eca191e3ed699a52f14a"
       define_method(:install) do
         bin.install "thanos"
       end
